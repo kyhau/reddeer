@@ -82,7 +82,7 @@ But still can do -
 a) go to WAF > Web ACLs
 b) create/edit Web ACL (e.g. SSRF_Protection)
    - Rules > Edit web ACL
-     - Rule: SSRFProectionRule
+     - Rule: SSRFProtectionRule
      - Action: Block
 c) Details
 Now curl won't work anymore.

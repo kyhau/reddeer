@@ -32,9 +32,11 @@ def get_tag_value(tags, key="Name"):
 @click.option("--profile", "-p", default="default", show_default=True, help="AWS profile name.")
 @click.option("--region", "-r", default="ap-southeast-2", show_default=True, help="AWS Region.")
 def inspect_ec2_instances(instanceid, pemfile, profile, region):
-    kwargs = {"InstanceIds": [instanceid]} if instanceid else {}
+
     session = Session(profile_name=profile)
     client = session.client("ec2", region_name=region)
+    kwargs = {"InstanceIds": [instanceid]} if instanceid else {}
+    
     for page in client.get_paginator("describe_instances").paginate(**kwargs).result_key_iters():
         for item in page:
             for instance in item["Instances"]:
