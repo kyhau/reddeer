@@ -1,1 +1,0 @@
-Files in this repo are copied from https://github.com/kyhau/arki/.
