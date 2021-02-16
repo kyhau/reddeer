@@ -8,3 +8,4 @@ This repo includes some helper scripts for performing red team operations agains
 1. https://github.com/adhorn/chaos-ssm-documents
 1. https://github.com/RhinoSecurityLabs/pacu
 1. https://github.com/elitest/Redboto
+1. https://github.com/hirajanwin/endgame
